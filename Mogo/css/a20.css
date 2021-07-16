@@ -1127,6 +1127,7 @@ div.text .jon-text{
     flex-wrap: wrap;
     height: 80%;
     justify-content: space-between;
+    padding-bottom: 50px;
 
 
 }
