@@ -1973,6 +1973,9 @@ form:focus-visible{
     .block4-item{
         bottom: 187px;
     }
+    .block3-main{
+        justify-content: space-around;
+    }
 
 
 }
@@ -2191,12 +2194,16 @@ form:focus-visible{
         line-height: 30px;
         
     }
+    .main2 .img img{
+        width: 180px;
+        height: 180px;
+    }
     a.hrefs{
         font-size: 15px;
         margin: 0 15px;
     }
     .block3-item{
-        width: 45%;
+        width: 35%;
     }
     .block3{
         height: auto;
