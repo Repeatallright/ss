@@ -16,7 +16,6 @@ let headerBlock = document.querySelector('.header-inner');
 let observerImg = new IntersectionObserver((entryes, observerImg) => {
     entryes.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('aaa');
             imgIpad.classList.add('activeIpad');
             imgIphone.classList.add('activeIphone');
         }
