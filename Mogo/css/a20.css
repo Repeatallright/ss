@@ -1624,6 +1624,9 @@ form:focus-visible{
 }
 
 @media ( max-width: 2000px){
+    .block3{
+        height: 1100px;
+    }
     p.intro-p-b{
         margin: 10px;
     }
