@@ -3,6 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 
+
 }
 *,
 *:before,
@@ -69,6 +70,7 @@ a.but:hover{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .header-inner{
     display: flex;
@@ -102,7 +104,7 @@ a.but:hover{
     color: aliceblue;
     font-size: 36px;
     font-weight: bold;
-    z-index:4;
+    z-index:10;
 }
 
 a.hrefs, a.hrefs_hide{
