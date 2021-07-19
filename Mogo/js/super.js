@@ -27,6 +27,7 @@ function imgShow(event) {
     item.slice(item.indexOf("L") + 2);
     superImg.src = item
     superBlock.style.display = 'flex';
+
 }
 
 

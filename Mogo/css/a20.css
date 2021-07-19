@@ -713,7 +713,7 @@ p.underline{
 
 /*  Jon Doe  */
 .jonDoe{
-    height: 300px;
+    
     background-color: rgb(236, 236, 236);
     width: 100%;
     display: flex;
@@ -739,9 +739,9 @@ div.img img{
     display: block;
 }
 div.text{
+    padding: 40px 0;
     width: 70%;
     display: flex;
-    height: 200px;
     flex-direction: column;
 }
 div.text .jon-text{
@@ -1303,7 +1303,7 @@ p i{
 }
 
 .footer_mogo{
-    width: 40%;
+    width: 38%;
 
 }
 .footer_h3{
@@ -1395,7 +1395,7 @@ form:focus-visible{
 
 
 .footer_blogs{
-    width: 30%;
+    width: 28%;
     display: flex;
     flex-direction: column;
 }
@@ -1434,7 +1434,7 @@ form:focus-visible{
 
 
 .footer_instagram{
-    width: 20%;
+    width: 28%;
 }
 .footer_collage{
     display: flex;
@@ -1509,7 +1509,7 @@ form:focus-visible{
     z-index: 4;
 }
 .super_img{
-    width: 80%;
+
     height: auto;
     transition: .2s;
 }
@@ -2171,9 +2171,9 @@ form:focus-visible{
         }
     }
     img.our_logo{
-        width: 10%;
+        width: auto;
         height: 70%;
-        transform: scale(.4);
+        transform: scale(.8);
     }
     .block3{
         height: 1000px;
@@ -2214,6 +2214,10 @@ form:focus-visible{
     .footer_contacts{
         width: 350px;
     }
+    .block4-body .container{
+        overflow:hidden;
+    }
+
 
 }
 
@@ -2375,9 +2379,9 @@ form:focus-visible{
         padding: 0;
     }
     img.our_logo{
-        width: 32%;
-        transform: scale(.5);
-        height: auto;
+        width: 26%;
+        transform: scale(.6);
+        height: 50%;
         
     }
     img.our_logo:hover{
