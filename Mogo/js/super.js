@@ -8,12 +8,11 @@ for (let con = 0; con < imgView.length; con++) {
     imgView[con].addEventListener('click', imgShow)
 
 }
-superImg.addEventListener('dblclick', superSize);
-
-superBut.addEventListener('click', () => {
+superImg.addEventListener('dblclick', () => {
     superBlock.style.display = 'none';
     superBlock.classList.remove('super_size')
-})
+});
+
 
 function superSize() {
     superBlock.className.includes('super_size') ? superBlock.classList.remove('super_size') : superBlock.classList.add('super_size');
@@ -27,7 +26,6 @@ function imgShow(event) {
     item.slice(item.indexOf("L") + 2);
     superImg.src = item
     superBlock.style.display = 'flex';
-
 }
 
 

@@ -56,16 +56,18 @@ a.but:hover{
 }
 .intro{
     width: 100%;
-    height: 1200px;
+    height: 100vh;
     background-image: url(../img/intro.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     transition: background-image 1s;
+    
 }
 .container{
     width: 100%;
+    height: auto;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -381,7 +383,7 @@ h2.intro-h2-w{
 
 
 .block1{
-    height: 1000px;
+    margin-bottom: 150px;
 }
 
 .block1-text{
@@ -495,7 +497,7 @@ h2.intro-h2-w{
 
 
 .block3{
-    height: 1200px;
+    padding-bottom: 50px;
 }
 .block3-body{
     margin: 0;
@@ -548,7 +550,7 @@ p.underline{
 }
 .block4-body .container{
     height: 1100px;
-    overflow: visible
+    overflow: visible;
 }
 .block4-text{
     margin-top: 50px;
@@ -640,7 +642,7 @@ p.underline{
 
 .block5{
     margin-top: 50px;
-    height: 1400px;
+
 }
 .block5-main{
     display: flex;
@@ -718,7 +720,7 @@ p.underline{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 150px;
+    margin-top: 100px;
     align-items: center;
     flex-direction: row;
 }
@@ -728,10 +730,12 @@ div.img{
     margin: 0;
 }
 .main2{
+    padding: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+
 }
 div.img img{
     height: 200px;
@@ -739,7 +743,6 @@ div.img img{
     display: block;
 }
 div.text{
-    padding: 40px 0;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -754,6 +757,7 @@ div.text .jon-text{
     font-family:'Kaushan Script', cursive;
     font-size: 34px;
     margin: 0;
+    padding: 20px 0;
 }
 
 /* BLOCK-6    BLOCK-6   BLOCK-6    BLOCK-6    BLOCK-6    BLOCK-6    BLOCK-6*/
@@ -855,93 +859,7 @@ div.text .jon-text{
 }
 
 /* BLOCK-7    BLOCK-7   BLOCK-7    BLOCK-7    BLOCK-7    BLOCK-7    BLOCK-7*/
-.callBack{
-    display: block;
-    position: fixed;
-    right: -800px;
-    bottom: 50px;
-    width: 300px;
-    height: 500px;
-    border-radius: 10px;
-    align-content: center;
-    transition: 1s;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
 
-    box-shadow:  5px 5px 19px rgb(168, 168, 168);
-}
-.hide_but{
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #000;
-    border-radius: 30px;
-    font-size: 60px;
-    left: -60px;
-    transition: 1s;
-    opacity: 0;
-}
-.hide_block_showed{
-    opacity: .8;
-}
-.hide_but:hover{
-    opacity: .5;
-}
-
-.body_item{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-}
-.person{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color:rgb(248, 99, 99) ;
-    height: 20%;
-    border-radius: 10px 10px 0 0;
-
-}
-.person-img{
-    border-radius: 50%;
-    width: auto;
-    height: 90%;
-
-}
-
-.main{
-    background-color: #fff;
-    padding: 10px;
-    height: 80%;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0 0 10px 10px ;
-}
-.person_job{
-    font-size: 26px;
-    margin: 15px;
-}
-.description{
-    padding: 0 15px;
-    text-align: center;
-    font-size: 18px;
-    width: 100%;
-    margin: 0;
-}
 
 /* BLOCK-7    BLOCK-7   BLOCK-7    BLOCK-7    BLOCK-7    BLOCK-7    BLOCK-7*/
 
@@ -996,6 +914,7 @@ div.text .jon-text{
     max-width: 2560px;
     height: auto;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .work_col{
     width: 25%;
@@ -1179,20 +1098,16 @@ div.text .jon-text{
 
 }
 
-.car_img{
-    width: 100%;
-    max-width: 2560px;
-    height: 100%;
-}
+
 /* Car    Car  Car    Car    Car    Car    Car*/
 
 .block11{
-    height: 1000px;
+    margin-bottom: 80px;
 }
 .block11_main{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .blog_item{
     width: 30%;
@@ -1263,7 +1178,6 @@ p i{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
     align-items: center;
     flex-direction: row;
     background-size: cover;
@@ -1290,12 +1204,9 @@ p i{
 
 /* BLOCK-13    BLOCK-13   BLOCK-13    BLOCK-13    BLOCK-13    BLOCK-13    BLOCK-13*/
 
-.footerEnd{
-    height: 800px;
-}
 .footer_main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 100px;
     width: 100%;
     flex-wrap: wrap;
@@ -1395,7 +1306,7 @@ form:focus-visible{
 
 
 .footer_blogs{
-    width: 28%;
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
@@ -1434,7 +1345,7 @@ form:focus-visible{
 
 
 .footer_instagram{
-    width: 28%;
+    width: 27%;
 }
 .footer_collage{
     display: flex;
@@ -1507,9 +1418,15 @@ form:focus-visible{
     position: relative;
     opacity: 1;
     z-index: 4;
+    max-width: 80%;
+    width: auto;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .super_img{
-
+    width: auto;
     height: auto;
     transition: .2s;
 }
@@ -1523,7 +1440,7 @@ form:focus-visible{
     justify-content: center;
     border: 1px solid #000;
     border-radius: 50%;
-    right: -20px;
+    right: -100px;
     top: -50px;
     transition: .2s;
 }
@@ -1551,7 +1468,7 @@ form:focus-visible{
 
 @media ( max-width: 2500px){
     .intro{
-        height: 1000px;
+        height: 90vh;
     }
     .intro-main{
         margin: 80px auto;
@@ -1571,9 +1488,7 @@ form:focus-visible{
     a.but{
         margin: 40px;
     }
-    .block1{
-        height: 900px;
-    }
+
     .block1-imgs{
         margin-top: 20px;
     }
@@ -1619,9 +1534,7 @@ form:focus-visible{
 }
 
 @media ( max-width: 2000px){
-    .block3{
-        height: 1100px;
-    }
+
     p.intro-p-b{
         margin: 10px;
     }
@@ -1629,9 +1542,7 @@ form:focus-visible{
         margin-top: 10px;
         padding: 0;
     }
-    .block1{
-        height: 800px;
-    }
+
     .block2{
         height: 250px;
     }
@@ -1645,9 +1556,7 @@ form:focus-visible{
     p.text2{
         font-size: 18px;
     }
-    .block5{
-        height: 1200px;
-    }
+
     .block5-main{
         margin-top: 50px;
     }
@@ -1667,21 +1576,14 @@ form:focus-visible{
     .slider_elem{
         font-size: 18px;
     }
-    p.intro-p-w{
-        font-size: 30px;
-    }
-    h2.intro-h2-w{
-        font-size: 80px;
-    }
+
     a.but{
         padding: 13px 35px;
     }
     .intro-slider{
         margin-top: 50px;
     }
-    .intro{
-        height: 900px;
-    }
+
     p.text{
         font-size: 18px;
         width: 80%;
@@ -1895,9 +1797,6 @@ form:focus-visible{
     .block2{
         height: 250px;
     }
-    .block1{
-       height: 800px; 
-    }
    .block2-h2{
        margin: 30px 0;
    }
@@ -1910,9 +1809,6 @@ form:focus-visible{
 
     .footerEnd .container{
         width: 100%;
-    }
-    .footerEnd{
-        height: 700px;
     }
     .footer_main{
         justify-content: center;
@@ -1951,11 +1847,9 @@ form:focus-visible{
         font-size: 16px;
     }
     .jonDoe{
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
-    .block5{
-        height: 1250px;
-    }
+
     .block4-img-ipad{
         right: 200px;
     }
@@ -1973,6 +1867,9 @@ form:focus-visible{
 
 }
 @media (max-width: 1400px){
+    .block1{
+        margin-bottom: 100px;
+    }
     p.intro-p-w{
         font-size: 35px;
     }
@@ -1990,13 +1887,6 @@ form:focus-visible{
         height: 800px;
     }
 
-    .block1{
-        height: 700px;
-    }
-    .block2-body, .block2 .container{
-        height: 200px;
-
-    }
     .block2{
         height: 200px;
     }
@@ -2097,9 +1987,7 @@ form:focus-visible{
     .container{
         width: 90%;
     }
-    .block11{
-        height: 900px;
-    }
+
     .footer_form{
         width: 40%;
     }
@@ -2112,9 +2000,6 @@ form:focus-visible{
         font-size: 18px;
         line-height: 35px;
         
-    }
-    .block5{
-        height: 1200px;
     }
     .bold_text{
         font-size: 18px;
@@ -2170,14 +2055,7 @@ form:focus-visible{
             opacity: 1;
         }
     }
-    img.our_logo{
-        width: auto;
-        height: 70%;
-        transform: scale(.8);
-    }
-    .block3{
-        height: 1000px;
-    }
+
 }
 @media (max-width: 1000px){
     div.text p.jon-text{
@@ -2188,6 +2066,9 @@ form:focus-visible{
     .main2 .img img{
         width: 180px;
         height: 180px;
+    }
+    .main2{
+        padding: 20px 0;
     }
     a.hrefs{
         font-size: 15px;
@@ -2214,10 +2095,41 @@ form:focus-visible{
     .footer_contacts{
         width: 350px;
     }
-    .block4-body .container{
-        overflow:hidden;
+    .block4-img-ipad{
+        right: 20px;
+        transition: 1s;
     }
-
+    .block4-img-iphone{
+        left: 20px;
+        transition: 1s;
+    }
+    .container{
+        width: 98%;
+    }
+    @keyframes ipad_an{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            right: -60px;
+            opacity: 1;
+        }
+    }
+    @keyframes iphone_an{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            left: -60px;
+            opacity: 1;
+        }
+    }
 
 }
 
@@ -2244,6 +2156,9 @@ form:focus-visible{
         margin-bottom: 0;
         justify-content: space-between;
         align-items: center;
+    }
+    .block4-body .container{
+        overflow: hidden;
     }
 
     .header-inner div.nav{
@@ -2274,9 +2189,6 @@ form:focus-visible{
     .block2-body, .container{
         height: 100%;
     }
-    .block2-body .container{
-        height: 100%;
-    }
     .block2-item{
         width: 30%;
         border: 0;
@@ -2293,11 +2205,9 @@ form:focus-visible{
     .block3-main{
         justify-content: center;
     }
-    .block3{
-        height: auto;
-    }
+
     .block4{
-        height: 900px;
+        height: 800px;
     }
     .block4-text{
         margin-top: 20px;
@@ -2305,7 +2215,7 @@ form:focus-visible{
     .block4-item{
         height: 600px;
         width: 900px;
-        bottom: 192px;
+        bottom: 292px;
     }
     .block4-img-ipad{
         right: -100px;
@@ -2379,13 +2289,12 @@ form:focus-visible{
         padding: 0;
     }
     img.our_logo{
-        width: 26%;
-        transform: scale(.6);
-        height: 50%;
-        
+        width: 15%;
+        margin: 20px 50px;
+        transform:scale( .8);
     }
     img.our_logo:hover{
-        transform: scale(.7);
+        transform: scale(1);
     }
     .work_col{
         width: 50%;
@@ -2399,13 +2308,13 @@ form:focus-visible{
         margin-top: 0;
     }
     .jonDoe{
-        height: 400px;
         margin-top: 70px;
         margin-bottom: 0;
     }
     .main2{
         flex-direction: column;
         justify-content: center;
+        padding: 10px 0;
     }
     .jonDoe .container{
         height: 100%;
@@ -2489,6 +2398,9 @@ form:focus-visible{
         width: 80%;
         height: 25%;
     }
+    .block3{
+        margin-top: 50px;
+    }
 }
 @media (max-width: 600px){
     div.text p.jon-text{
@@ -2505,6 +2417,7 @@ form:focus-visible{
     .logo{
         font-size: 40px;
     }
+   
 }
 @media (max-width: 550px){
     .intro-text{
@@ -2519,6 +2432,14 @@ form:focus-visible{
     }
     .footer_main{
         margin-left: 10px;
+    }
+    .block7_body{
+        justify-content: center;
+    }
+    img.our_logo{
+        width: 25%;
+
+        transform:scale( .8);
     }
 
 }
@@ -2564,10 +2485,10 @@ form:focus-visible{
         }
     }
     .block4{
-        height: 800px;
+        height: 600px;
     }
     .block4-item{
-        bottom: 233px;
+        bottom: 433px;
     }
     h2.intro-h2-b{
         font-size: 35px;

@@ -15,9 +15,16 @@ let headerBlock = document.querySelector('.header-inner');
 
 let observerImg = new IntersectionObserver((entryes, observerImg) => {
     entryes.forEach(entry => {
-        if (entry.isIntersecting) {
-            imgIpad.classList.add('activeIpad');
-            imgIphone.classList.add('activeIphone');
+        if (window.screen.width > 800) {
+            if (entry.isIntersecting) {
+                imgIpad.classList.add('activeIpad');
+                imgIphone.classList.add('activeIphone');
+            }
+        } else {
+            if (entry.isIntersecting) {
+                imgIpad.classList.add('activeIpad');
+                imgIphone.classList.add('activeIphone');
+            }
         }
     })
 
@@ -52,3 +59,4 @@ let headerObserver = new IntersectionObserver((entryesHeader, headerObserver) =>
 }, { threshold: .01 })
 headerObserver.observe(introBlock)
 
+console.log(window.screen.width);
