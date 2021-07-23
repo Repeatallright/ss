@@ -45,7 +45,6 @@ a.but{
 }
 a.but:hover{
     background-color: aliceblue;
-    border-color: #000;
     color: #000;
 }
 .header{
@@ -935,6 +934,7 @@ div.text .jon-text{
     text-align: center;
 }
 .coll_info{
+    height: 1px;
     width: 100%;
     padding:  0 15px;
     text-align: center;
@@ -955,8 +955,10 @@ div.text .jon-text{
     text-align: center;
     font-size: 36px;
     font-weight: 700;
+    top: 0;
     margin: 0;
     position: relative;
+    transform: translate(0, -50%, 0);
 }
 .collapse_pic img{
     transition: .3s;
@@ -1791,6 +1793,12 @@ form:focus-visible{
     .block4-item{
         bottom: 187px;
     }
+    .coll_info{
+        top: 45%;
+    }
+    .coll_text{
+        font-size: 30px;
+    }
 }
 @media (max-width: 1600px) {
     
@@ -2054,6 +2062,12 @@ form:focus-visible{
             left: -60px;
             opacity: 1;
         }
+    }
+    .coll_info{
+        top: 40%;
+    }
+    .coll_text{
+        font-size: 26px;
     }
 
 }
@@ -2350,6 +2364,9 @@ form:focus-visible{
     }
     .intro-text{
         margin-top: 50px;
+    }
+    .coll_text{
+        font-size: 22px;
     }
 
 

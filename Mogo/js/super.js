@@ -3,15 +3,16 @@ let superHide = document.querySelector('.super_hide');
 let superImg = document.querySelector('.super_img');
 let imgView = document.querySelectorAll('.img_view');
 let superBut = document.querySelector('.super_but');
+if (window.screen.width > 1024) {
+    for (let con = 0; con < imgView.length; con++) {
+        imgView[con].addEventListener('click', imgShow)
 
-for (let con = 0; con < imgView.length; con++) {
-    imgView[con].addEventListener('click', imgShow)
-
+    }
+    superImg.addEventListener('dblclick', () => {
+        superBlock.style.display = 'none';
+        superBlock.classList.remove('super_size')
+    });
 }
-superImg.addEventListener('dblclick', () => {
-    superBlock.style.display = 'none';
-    superBlock.classList.remove('super_size')
-});
 
 
 function superSize() {
