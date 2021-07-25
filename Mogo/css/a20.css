@@ -215,22 +215,23 @@ p.text{
 }
 .nav_bar{
     width: 100%;
-    height: 50%;
     background: rgb(235, 139, 141);
     position: fixed;
     z-index: 5;
     display: flex;
     flex-direction: column;
-    top: -100%;
+    top: -150%;
     transition: 1s;
     padding-top: 20%;
+    opacity: 1;
+    
     
 }
 .nav_bar a.hrefs_hide{
     width: 100%;
     font-size: 18px;
     display: flex;
-    height: 15%;
+    height: 50px;
     position: relative;
     margin: 0;
     text-align: center;
@@ -1799,6 +1800,9 @@ form:focus-visible{
     .coll_text{
         font-size: 30px;
     }
+    .loren-info{
+        font-size: 30px;
+    }
 }
 @media (max-width: 1600px) {
     
@@ -2064,9 +2068,12 @@ form:focus-visible{
         }
     }
     .coll_info{
-        top: 40%;
+        top: 45%;
     }
     .coll_text{
+        font-size: 26px;
+    }
+    .loren-info{
         font-size: 26px;
     }
 
@@ -2366,6 +2373,9 @@ form:focus-visible{
         margin-top: 50px;
     }
     .coll_text{
+        font-size: 22px;
+    }
+    .loren-info{
         font-size: 22px;
     }
 

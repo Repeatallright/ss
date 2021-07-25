@@ -58,5 +58,3 @@ let headerObserver = new IntersectionObserver((entryesHeader, headerObserver) =>
     })
 }, { threshold: .01 })
 headerObserver.observe(introBlock)
-
-console.log(window.screen.width);

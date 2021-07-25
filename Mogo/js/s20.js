@@ -43,18 +43,9 @@ function selector_active(event) {
 selector.onclick = selector_active;
 
 
-let headerStile = document.querySelector('.header-inner');;
-let barCount = false
-let barBut = document.querySelector('.item_bar');
-let navBar = document.querySelector('.nav_bar');
-let bodyBlock = document.querySelector('body')
 
-barBut.addEventListener("click", () => {
-    barCount ? barCount = false : barCount = true;
-    barCount ? navBar.style.top = '0' : navBar.style.top = '-100%';
-    barCount ? headerStile.classList.add('head_act') : headerStile.classList.remove('head_act');
 
-})
+
 
 document.querySelectorAll('.hrefs').forEach(href => {
     href.addEventListener('click', scrollTo)
