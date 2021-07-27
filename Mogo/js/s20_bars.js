@@ -2,7 +2,7 @@
 let aaa = ['t', 'b']
 let barCount = false;
 let par = document.querySelectorAll('.bt');
-let headerStile = document.querySelector('.header-inner');;
+let headerStile = document.querySelector('.header-inner');
 
 let barBut = document.querySelector('.item_bar');
 let navBar = document.querySelector('.nav_bar');

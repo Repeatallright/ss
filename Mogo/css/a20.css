@@ -410,8 +410,8 @@ h2.intro-h2-w{
     flex-wrap: wrap;
 }
 .block1-item{
-    width: 28%;
-    height: 28%;
+    width: 30%;
+    height: 30%;
     display: block;
     background: rgb(110, 204, 181);
     transition: 0.1s linear;
