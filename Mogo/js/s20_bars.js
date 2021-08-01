@@ -1,6 +1,6 @@
-
 let aaa = ['t', 'b']
 let barCount = false;
+let introBlockBody = document.querySelector('body');
 let par = document.querySelectorAll('.bt');
 let headerStile = document.querySelector('.header-inner');
 
@@ -22,6 +22,7 @@ function active() {
 
     }
     barCount ? navBar.style.top = '0' : navBar.style.top = '-150%';
+    barCount ? introBlockBody.style.overflow = 'hidden' : introBlockBody.style.overflow = 'visible';
     barCount ? headerStile.classList.add('head_act') : headerStile.classList.remove('head_act');
 }
 
@@ -30,6 +31,7 @@ window.addEventListener("resize", () => {
     if (window.screen.width > 800) {
         barCount = false;
         navBar.style.top = '-150%';
+        introBlockBody.style.overflow = 'visible';
         headerStile.classList.remove('head_act');
         par[0].style.animationName = 'unact_top';
         par[1].style.animationName = 'unact_bot';

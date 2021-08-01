@@ -19,15 +19,15 @@
 </head>
 
 <body>
-    <div class="intro" id="intro">
+    <header class="intro" data="block_info">
         <div class="header">
             <div class="nav_bar">
-                <a href="#about" class="hrefs hrefs_hide">ABOUT</a>
-                <a href="#service" class="hrefs hrefs_hide">SERVICE</a>
-                <a href="#work" class="hrefs hrefs_hide">WORK</a>
-                <a href="#blog" class="hrefs hrefs_hide">BLOG</a>
-                <a href="#contact" class="hrefs hrefs_hide">CONTACT</a>
-                <a href="#contact" class=" hrefs hrefs_hide"> &#9993;</a>
+                <a href="#about" class="hrefs href_unActive hrefs_hide">ABOUT</a>
+                <a href="#service" class="hrefs href_unActive hrefs_hide">SERVICE</a>
+                <a href="#work" class="hrefs href_unActive hrefs_hide">WORK</a>
+                <a href="#blog" class="hrefs href_unActive hrefs_hide">BLOG</a>
+                <a href="#contact" class="hrefs href_unActive hrefs_hide">CONTACT</a>
+                <a href="#contact" class=" hrefs href_unActive hrefs_hide"> &#9993;</a>
             </div>
 
             <div class="header-inner header_fixed">
@@ -35,12 +35,12 @@
                     <div class="header_block">
                         <div class="logo">MoGo</div>
                         <div class="nav">
-                            <a href="#about" class="hrefs">ABOUT</a>
-                            <a href="#service" class="hrefs">SERVICE</a>
-                            <a href="#work" class="hrefs">WORK</a>
-                            <a href="#blog" class="hrefs">BLOG</a>
-                            <a href="#contact" class="hrefs">CONTACT</a>
-                            <a href="#contact" class="hrefs"> &#9993;</a>
+                            <a href="#about" class="hrefs href_unActive about-href">ABOUT</a>
+                            <a href="#service" class="hrefs href_unActive service-href">SERVICE</a>
+                            <a href="#work" class="hrefs href_unActive work-href">WORK</a>
+                            <a href="#blog" class="hrefs href_unActive blog-href">BLOG</a>
+                            <a href="#contact" class="hrefs href_unActive contact-href">CONTACT</a>
+                            <a href="#contact" class="hrefs href_unActive contact-href"> &#9993;</a>
                         </div>
                         <div class="item_bar">
                             <p id="t" class=" bt tt"></p>
@@ -66,9 +66,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="block1" id="about">
+    <section class="block1" data="block_info" id="about">
         <div class="block1-body">
             <div class="container">
                 <div id="h1" class="block4-text text_header_p_active">
@@ -97,9 +97,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="block2" id="service">
+    <section class="block2" data="block_info">
         <div class="block2-body">
             <div class="container">
                 <div class="block2-items ">
@@ -126,9 +126,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="block3">
+    <section class="block3" id="service" data="block_info">
         <div class="block3-body">
             <div class="container">
                 <div id="h2" class="block4-text">
@@ -181,9 +181,9 @@
 
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="block4">
+    <section class="block4" data="block_info">
         <div class="block4-body">
             <div class="container">
                 <div class="block4-main">
@@ -198,10 +198,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="block5">
+    <section class="block5" data="block_info">
         <div class="block5-body">
             <div class="container">
                 <div id="h4" class="block4-text">
@@ -297,10 +297,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+        </div>
+    </section>
 
-    <section class="block6">
+    <section class="block6" data="block_info">
         <div class="container">
             <div id="h5" class="block4-text">
                 <p class="intro-p-b">Who we are</p>
@@ -363,7 +363,7 @@
 
 
 
-    <div class="block7_logos">
+    <section class="block7_logos" data="block_info">
         <div class="container">
             <div class="block7_body">
                 <img src="img/logos/1.png" alt="" class="our_logo">
@@ -374,10 +374,10 @@
                 <img src="img/logos/6.png" alt="" class="our_logo">
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="block8" id="work">
+    <section class="block8" data="block_info" id="work">
         <div class="container">
             <div id="h6" class="block4-text">
                 <p class="intro-p-b">What we do</p>
@@ -433,10 +433,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="block9">
+    <section class="block9" data="block_info">
         <div class="container">
             <div class="review">
                 <i id="but_left" class="fas fa-angle-left but_slide_left sb"></i>
@@ -464,11 +464,11 @@
                 <i id="but_right" class="fas fa-angle-left but_slide_right sb"></i>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
-    <section class="block10">
+    <section class="block10" data="block_info">
         <div class="container">
             <div id="h7" class="block4-text">
                 <p class="intro-p-b">Happy Clients</p>
@@ -542,7 +542,7 @@
 
 
 
-    <div class="block11" id="blog">
+    <section class="block11" data="block_info" id="blog">
         <div class="block11-body">
             <div class="container">
                 <div id="h8" class="block4-text">
@@ -618,19 +618,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="block12">
-        <div class="container">
-            <div class="block12-text">
-                <p class="map-p"><i class="fas fa-map-marker-alt"></i></p>
-                <h2 class="map-h2">OPEN MAP</h2>
-            </div>
+    <section class="block12" data="block_info">
+        <div class="block12-text">
+            <p class="map-p"><i class="fas fa-map-marker-alt"></i></p>
+            <h2 class="map-h2">OPEN MAP</h2>
         </div>
-    </div>
+    </section>
 
-    <div class="footerEnd" id="contact">
+    <section class="footerEnd" data="block_info" id="contact">
         <div class="container">
             <div class="footer_main">
                 <div class="footer_mogo">
@@ -711,16 +709,16 @@
 
         </div>
         <p class="footer_end">2020 MoGo free PSD template by <span>Laaqiq</span></p>
-    </div>
-    </div>
+        </div>
+    </section>
 
-    <div class="super_block">
+    <section class="super_block" data="block_info">
         <div class="super_hide"></div>
         <div class="super_item">
             <img class="super_img" src="" alt="">
         </div>
-    </div>
-    </div>
+        </div>
+    </section>
 
 
     <script src="Js/s20.js" type="text/javascript"></script>

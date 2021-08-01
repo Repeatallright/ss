@@ -39,6 +39,7 @@ let observerText = new IntersectionObserver((entryess, observerText) => {
                 block2_h2[i].classList.add('block2-h2_active');
                 block2_text[i].classList.add('text2_active')
             }
+            console.log('aaa');
         } else {
             for (let i = 0; i <= block2_h2.length - 1; i++) {
                 block2_h2[i].classList.remove('block2-h2_active');
@@ -58,3 +59,25 @@ let headerObserver = new IntersectionObserver((entryesHeader, headerObserver) =>
     })
 }, { threshold: .01 })
 headerObserver.observe(introBlock)
+
+
+
+let hrefs = document.querySelectorAll('.hrefs');
+let navObserver = new IntersectionObserver((entryes, navObserver) => {
+    entryes.forEach(entry => {
+        if (entry.isIntersecting) {
+            if (entry.target.id) {
+
+                hrefs.forEach(elem => {
+                    elem.classList.add('href_unActive')
+                    elem.classList.remove('href_active')
+                })
+                document.querySelector(`.${entry.target.id}-href`).classList.add('href_active')
+            }
+            console.log(`.${entry.target}-href`);
+        }
+    })
+}, { threshold: .1 })
+document.querySelectorAll('section').forEach(elem_observe => {
+    navObserver.observe(elem_observe)
+})

@@ -109,7 +109,6 @@ a.but:hover{
 }
 
 a.hrefs, a.hrefs_hide{
-    color: aliceblue;
     text-decoration: none;
     margin: 0 20px;
     position: relative;
@@ -120,6 +119,12 @@ a.hrefs, a.hrefs_hide{
     position: relative;
     
 
+}
+.href_unActive{
+    color: #fff;
+}
+.href_active{
+    color: rgb(255, 248, 147);;
 }
 a.hrefs:hover , a.hrefs_hide:hover{
     border-bottom: 1px solid rgb(255, 248, 147);
@@ -273,6 +278,7 @@ p.text{
         margin: 0;
         transform: rotate(-45deg);
     }
+    
 }
 
 @keyframes unact_top{
@@ -316,7 +322,7 @@ p.text{
 
 /* INTRO-MAIN   INTRO-MAIN   INTRO-MAIN   INTRO-MAIN   INTRO-MAIN   INTRO-MAIN*/ 
 .intro_main_con{
-    height: 90%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1720,9 +1726,7 @@ form:focus-visible{
     .intro-main{
         margin: 50px auto;
     }
-    .intro{
-        height: 900px;
-    }
+
     .block5-selector{
         padding: 5px;
     }
@@ -1894,9 +1898,6 @@ form:focus-visible{
     h2.intro-h2-b{
         font-size: 50px;
         padding: 0;
-    }
-    .intro{
-        height: 800px;
     }
 
     .block2{
